@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+/* コメントを太字に変更・フォント変更・文字サイズ変更 */
+span[id="message"] {
+  font-weight: bolder;
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 15px;
+}
+
+/* アカウント名のフォント変更、太字に変更、文字サイズ変更 */
+span[id="author-name"] {
+  font-weight: bolder;
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 15px;
+}
+
+/* 1つのコメントの外側に余白を作る＆コメントの背景を白に */
+yt-live-chat-text-message-renderer[class="style-scope yt-live-chat-item-list-renderer"] {
+  background-color: white;
+  margin: 3px;
+}
+
+/* ユーザーのアイコンを非表示にする */
+yt-img-shadow[class="no-transition style-scope yt-live-chat-text-message-renderer"] {
+  filter: blur(6px);
+}
+
+/* トップチャット又はチャットに切り替えた際にチャットに表示されるメッセージを非表示にする */
+yt-live-chat-viewer-engagement-message-renderer[class="style-scope yt-live-chat-item-list-renderer"] {
+  display: none;
+}
+
+/* アイコンにモザイクをかける */
+yt-img-shadow[class="style-scope yt-live-chat-paid-message-renderer no-transition"] {
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
+
+/* アイコンにモザイクをかける */
+yt-img-shadow[class="style-scope yt-live-chat-ticker-paid-message-item-renderer no-transition"] {
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
+
+/* アイコンにモザイクをかける */
+yt-img-shadow[class="style-scope ytd-sponsorships-live-chat-header-renderer no-transition"] {
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
+
+/* アイコンにモザイクをかける */
+yt-img-shadow[class="style-scope yt-live-chat-ticker-sponsor-item-renderer no-transition"] {
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
+
+/* ユーザーの名前を非表示にする
+span[id="author-name"] {
+  display: none;
+}
+
+/* 作った余白の色をグレーにする */
+div[class="style-scope yt-live-chat-item-list-renderer"] {
+  background-color: #dedede;
+}
+
+/* スーパーチャットのコメントのフォント変更と太字にする */
+div[class="style-scope yt-live-chat-paid-message-renderer"] {
+  font-weight: bolder;
+  font-family: 'Mochiy Pop One', sans-serif;
+}

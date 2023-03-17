@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "YouTubeCommentViewer",
+  "version": "1.0",
+  "description": "YouTubeLiveのチャットをコメントビュアー風にする拡張機能です。 ※注意※この拡張機能はライブ視聴ページでチャットのポップアウトしたウィンドウのみ適応されます。ポップアウトしないと使用できませんのでご注意ください。",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["css/style.css"]
+    }
+  ],
+  "icons": {
+    "128": "icon/comment.png"
+  },
+
+  "author": "たなかぴよこ"
+}
