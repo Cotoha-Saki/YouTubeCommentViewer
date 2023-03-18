@@ -67,7 +67,7 @@ yt-img-shadow[class="style-scope yt-live-chat-ticker-sponsor-item-renderer no-tr
 /* ユーザーの名前を非表示にする
 span[id="author-name"] {
   display: none;
-} */
+}
 
 /* 作った余白の色をグレーにする */
 div[class="style-scope yt-live-chat-item-list-renderer"] {
