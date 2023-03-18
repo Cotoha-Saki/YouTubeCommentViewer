@@ -7,10 +7,8 @@ span[id="message"] {
   font-size: 15px;
 }
 
-/* アカウント名のフォント変更、太字に変更、文字サイズ変更 */
+/* アカウント名の文字サイズ変更 */
 span[id="author-name"] {
-  font-weight: bolder;
-  font-family: 'Mochiy Pop One', sans-serif;
   font-size: 15px;
 }
 
@@ -44,6 +42,18 @@ yt-img-shadow[class="style-scope yt-live-chat-ticker-paid-message-item-renderer 
 
 /* アイコンにモザイクをかける */
 yt-img-shadow[class="style-scope ytd-sponsorships-live-chat-header-renderer no-transition"] {
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
+
+/* アイコンにモザイクをかける */
+yt-img-shadow[class="style-scope yt-live-chat-membership-item-renderer no-transition"] {
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
+
+/* アイコンにモザイクをかける */
+yt-img-shadow[class="style-scope yt-live-chat-membership-item-renderer no-transition"] {
   -ms-filter: blur(6px);
   filter: blur(6px);
 }
